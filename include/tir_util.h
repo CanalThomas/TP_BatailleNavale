@@ -14,6 +14,6 @@ public:
 	bool tirutilisateur(Flotte adv);
 };
 
-coordonnees tirOrdi(); 
+coordonnees tirOrdi();
 
 
