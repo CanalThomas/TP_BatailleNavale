@@ -1,10 +1,10 @@
 #include <Windows.h>
 #include <iostream>
-#include<GL/gl.h>
-#include<GL/GLUT.h>
+#include <GL/gl.h>
+#include <GL/GLUT.h>
 #include <string>
-#include <vector>
 #include "tir_util.h"
+
 using namespace std;
 
 
@@ -14,18 +14,18 @@ void TirUtil::coorddecase() {
 	glRasterPos2f(0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
-	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, "Entrez votre cible au clavier (lettre puis numéro)");
+	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser Ã  utiliser des variables globales*/
+	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, "Entrez votre cible au clavier (lettre puis numÃ©ro)");
 	cin >> lettre;
 	bool test = ((lettre >= 'a' && lettre <= 'j') || (lettre >= 'A' && lettre <= 'J'));
 	while test = FALSE{
-		cout << "Erreur, le caractère n'est pas une lettre possible, recomencez" << endl;
+		cout << "Erreur, le caractÃ¨re n'est pas une lettre possible, recomencez" << endl;
 		cin >> lettre;
 	}
 	cin >> entier;
 	bool test2 = (entier >= 0 && entier < 10);
 	while test2 = FALSE{
-		cout << "Erreur, le caractère n'est pas une entier entre 0 et 9 , recomencez" << endl;
+		cout << "Erreur, le caractÃ¨re n'est pas une entier entre 0 et 9 , recomencez" << endl;
 		cin >> entier;
 	}
 	vector<int> prochain_tir;
@@ -35,8 +35,8 @@ void TirUtil::coorddecase() {
 }
 
 bool TirUtil::tirutilisateur(Flotte adv) {
-	// on prend la flotte adv et la case ciblée par le joueur et on gère la maj de la grille adv
+	// on prend la flotte adv et la case ciblÃ©e par le joueur et on gÃ¨re la maj de la grille adv
 	TirUtil.coorddecase();
 	bool a_tire = FALSE;
-
+	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
 }
