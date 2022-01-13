@@ -8,12 +8,12 @@ using namespace std;
 
 class TirUtil {
 protected:
-	pair<int,int>* Tir;
+	coordonnee Tir;
 public:
 	TirUtil();
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
 };
-pair<int,int> tirOrdi();
+coordonnee tirOrdi();
 
 
