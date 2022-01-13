@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
-using namespace std;
 #include <vector>
 #include "flotte.h"
+#include <utility>
+using namespace std;
 
 class TirUtil {
 protected:
-	vector<int>* Tir;
+	pair<int,int>* Tir;
 public:
 	TirUtil();
 	void coorddecase();
