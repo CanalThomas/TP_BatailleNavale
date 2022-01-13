@@ -31,7 +31,7 @@ class Bateau {
 		bool getM_etatGeneral();
  
  		//Fonction qui modifie l'état d'une partie du bateau de coordonnées _coord
-		void estTouche(vector<int> _coord);
+		bool estTouche(vector<int> _coord);
 };
 
 

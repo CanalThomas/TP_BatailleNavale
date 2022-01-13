@@ -171,4 +171,8 @@ Flotte::~Flotte()
 
 }
 
+vector<Bateau> Flotte::getflotte()
+{
+	return m_flotte;
+}
 

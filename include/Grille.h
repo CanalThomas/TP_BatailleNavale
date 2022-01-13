@@ -5,11 +5,13 @@
 #include <string>
 #include <vector>
 
+class flotte;
+
 
 
 class grille {
 	private :
-		int grid[10][10];
+		int m_grid[10][10];
 
 
 	public:

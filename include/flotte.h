@@ -15,6 +15,7 @@ public:
 	Flotte(std::string nfichier);
 	~Flotte();
 
+	std::vector<Bateau> getflotte();
 
 
 };
