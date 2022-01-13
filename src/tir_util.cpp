@@ -33,7 +33,7 @@ void TirUtil::coorddecase() {
 		cout << "Erreur, le caractère n'est pas une entier entre 0 et 9 , recomencez" << endl;
 		cin >> entier;
 	}
-	vector<int> prochain_tir(2);
+	coordonnees prochain_tir;
 	prochain_tir.push(convertir(lettre));
 	prochain_tir.push(entier);
 	*(TirUtil.Tir) = prochain_tir;
@@ -53,11 +53,10 @@ TirUtil::TirUtil() {
 }
 
 
-
-pair<int,int> tirOrdi()
+coordonnees tirOrdi()
 {
 	srand((unsigned int) time(NULL));
-	coordonnee coord;
+	coordonnees coord;
 	coord.push(rand() % 10);
 	coord.push(rand() % 10);
 	return coord;
