@@ -26,6 +26,23 @@ TEST(test_coordBateau, Test1)
     test_coordBateau(b);
 }
 
+TEST(convertir_test, ASCII_Vers_Int) {
+	EXPECT_EQ(0, convertir('a'));
+	EXPECT_EQ(9, convertir('j'));
+}
+
+TEST(coordonnées, utilisateurTir) {
+	SetUp() {
+	TirUtil tir = TirUtil();
+	}
+	//il faut rentrer 'a' et 0 en valeurs
+	cout << "rentrer 'a' puis 0 pour le bon déroulement du test"<<endl;
+	coorddecase();
+	ASSERT_EQ((tir.Tir*)[1], 0);
+	ASSERT_EQ((tir.Tir*)[2], 0);
+
+}
+
 
 int main(int argc, char **argv)
 {
