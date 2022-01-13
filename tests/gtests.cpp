@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-
+#include "tir_util.h"
 #include "Bateau.h"
 
 
@@ -24,6 +24,25 @@ TEST(test_coordBateau, Test1)
     v.push_back(c2);
     Bateau b(2,v);
     test_coordBateau(b);
+}
+
+TEST(convertir_test, ASCII_Vers_Int) {
+	// test dans tir_util de la fonction convertir
+	EXPECT_EQ(0, convertir('a'));
+	EXPECT_EQ(9, convertir('j'));
+}
+
+TEST(coordonnées, utilisateurTir) {
+	//test dans tir_util de coorddecase()
+	SetUp() {
+	TirUtil tir = TirUtil();
+	}
+	//il faut rentrer 'a' et 0 en valeurs
+	cout << "rentrer 'a' puis 0 pour le bon déroulement du test"<<endl;
+	coorddecase();
+	ASSERT_EQ((tir.Tir*)[1], 0);
+	ASSERT_EQ((tir.Tir*)[2], 0);
+
 }
 
 
