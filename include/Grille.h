@@ -14,7 +14,7 @@ class grille {
 
 
 	public:
-		int grid[10][10];
+		int m_grid[10][10];
 
 		//Constructeur grille qu'on attaque donc vide initialement
 		grille();
