@@ -20,9 +20,9 @@ void TirUtil::coorddecase() {
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
-	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, "Entrez votre cible au clavier (lettre puis numéro)");
+	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, "Entrez votre cible au clavier (lettre minuscule puis numéro)");
 	cin >> lettre;
-	bool test = ((lettre >= 'a' && lettre <= 'j') || (lettre >= 'A' && lettre <= 'J'));
+	bool test = ((lettre >= 'a' && lettre <= 'j'));
 	while test = FALSE{
 		cout << "Erreur, le caractère n'est pas une lettre possible, recomencez" << endl;
 		cin >> lettre;
