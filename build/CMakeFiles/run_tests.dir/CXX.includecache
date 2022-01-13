@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Bateau.h
+iostream
+-
+string
+-
+vector
+-
+
+../include/flotte.h
+iostream
+-
+vector
+-
+fstream
+-
+
+/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/flotte.cpp
+flotte.h
+/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/flotte.h
+Bateau.h
+/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.h
+random
+-
+
