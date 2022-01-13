@@ -2,11 +2,12 @@
 #include <iostream>
 using namespace std;
 #include <vector>
+#include "flotte.h"
 
 class TirUtil {
 protected:
-	void coorddecase()
-	bool tirutilisateur(/*Voir les arguments quand on aura les types mais en gros la flotte utilisateur et adverse*/);
+	void coorddecase();
+	bool tirutilisateur(Flotte adv);
 	vector<int>* Tir;
 
 };
