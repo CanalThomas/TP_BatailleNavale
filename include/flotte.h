@@ -1,7 +1,12 @@
+#ifndef FLOTTE_HEADER
+#define FLOTTE_HEADER
+
+
 #include<iostream>
 #include<vector>
 #include <fstream>
 
+#define ASCII_0 48
 
 class Bateau;
 
@@ -20,3 +25,4 @@ public:
 
 };
 
+#endif // !FLOTTE_HEADER

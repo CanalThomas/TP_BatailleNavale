@@ -2,21 +2,17 @@
 #include <iostream>
 #include <vector>
 #include "flotte.h"
-#include "bateau.h"
-
-#include <utility>
 
 using namespace std;
 
 class TirUtil {
 protected:
-	pair<int,int>* Tir;
+	coordonnees Tir;
 public:
 	TirUtil();
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
 };
-
 coordonnees tirOrdi();
 
 

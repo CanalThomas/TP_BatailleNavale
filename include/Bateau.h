@@ -7,10 +7,10 @@
 
 using namespace std;
 
-typedef vector<int> coordonnees(2);
+typedef vector<int> coordonnees;
 
 
-typedef struct suivi {
+struct suivi {
 	coordonnees position;
 	bool etat;
 };

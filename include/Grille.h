@@ -6,6 +6,7 @@
 #include <vector>
 
 class flotte;
+#include "flotte.h"
 
 
 
@@ -15,11 +16,13 @@ class grille {
 
 
 	public:
+		int m_grid[10][10];
 
 		//Constructeur grille qu'on attaque donc vide initialement
 		grille();
 		//Constructeur grille de notre flotte
-		grille(flotte Util);
+		grille(Flotte Util);
+
 
 		//Mise à jour grille d'attaque 
 		void MAJAttaqueOrdi();
