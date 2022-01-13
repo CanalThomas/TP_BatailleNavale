@@ -61,6 +61,6 @@ coordonnees tirOrdi()
 	srand((unsigned int) time(NULL));
 	coordonnees coord;
 	coord.push_back(rand() % 10);
-	coord.push-back(rand() % 10);
+	coord.push_back(rand() % 10);
 	return coord;
 }
