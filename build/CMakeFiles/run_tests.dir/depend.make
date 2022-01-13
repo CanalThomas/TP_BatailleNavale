@@ -33,5 +33,7 @@ CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../googletest/googletest/include/gt
 CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../googletest/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../include/Bateau.h
+CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../include/flotte.h
+CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../include/tir_util.h
 CMakeFiles/run_tests.dir/tests/gtests.cpp.o: ../tests/gtests.cpp
 

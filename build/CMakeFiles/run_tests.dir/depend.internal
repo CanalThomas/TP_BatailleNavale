@@ -34,4 +34,6 @@ CMakeFiles/run_tests.dir/tests/gtests.cpp.o
  ../googletest/googletest/include/gtest/internal/gtest-string.h
  ../googletest/googletest/include/gtest/internal/gtest-type-util.h
  ../include/Bateau.h
+ ../include/flotte.h
+ ../include/tir_util.h
  /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/tests/gtests.cpp

@@ -360,10 +360,6 @@ vector
 flotte.h
 ../include/flotte.h
 
-/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.cpp
-Bateau.h
-/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.h
-
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/flotte.cpp
 flotte.h
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/flotte.h
@@ -389,6 +385,8 @@ tir_util.h
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/tests/gtests.cpp
 gtest/gtest.h
 -
+tir_util.h
+/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/tests/tir_util.h
 Bateau.h
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/tests/Bateau.h
 
