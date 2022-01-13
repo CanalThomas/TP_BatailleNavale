@@ -36,7 +36,7 @@ void TirUtil::coorddecase() {
 	pair<int,int> prochain_tir;
 	prochain_tir.first =convertir(lettre);
 	prochain_tir.second=entier;
-	TirUtil.Tir* = prochain_tir;
+	*(TirUtil.Tir) = prochain_tir;
 }
 
 bool TirUtil::tirutilisateur(Flotte adv) {
