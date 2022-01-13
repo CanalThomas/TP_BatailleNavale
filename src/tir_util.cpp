@@ -54,13 +54,11 @@ TirUtil::TirUtil() {
 
 
 
-coordonnees tirOrdi()
+pair<int,int> tirOrdi()
 {
 	srand((unsigned int) time(NULL));
-	coordonnees coord;
-	int x = rand() % 10;
-	int y = rand() % 10;
-	coord.push_back(x);
-	coord.push_back(y);
+	pair<int,int> coord;
+	coord.first = rand() % 10;
+	coord.second = rand() % 10;
 	return coord;
 }
