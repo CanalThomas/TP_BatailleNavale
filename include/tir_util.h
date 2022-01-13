@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include "flotte.h"
-#include "bateau.h"
 #include <utility>
 
 using namespace std;
