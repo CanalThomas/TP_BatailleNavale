@@ -16,7 +16,6 @@ public:
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
 };
-
-coordonnees tirOrdi();
+pair<int,int> tirOrdi();
 
 
