@@ -7,6 +7,9 @@
 
 using namespace std;
 
+int windowWidth;
+int windowHeight;
+
 int convertir(char lettre) {
 	int entier = (int)lettre - 97;
 	return entier;
