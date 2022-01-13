@@ -6,8 +6,9 @@ using namespace std;
 
 class TirUtil {
 protected:
+	vector<int>* Tir;
+public:
+	TirUtil();
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
-	vector<int>* Tir;
-
 };
