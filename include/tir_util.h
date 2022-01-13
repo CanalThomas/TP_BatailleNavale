@@ -7,12 +7,12 @@ using namespace std;
 
 class TirUtil {
 protected:
-	coordonnee Tir;
+	coordonnees Tir;
 public:
 	TirUtil();
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
 };
-coordonnee tirOrdi();
+coordonnees tirOrdi();
 
 
