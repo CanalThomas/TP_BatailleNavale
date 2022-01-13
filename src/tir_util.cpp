@@ -40,3 +40,21 @@ bool TirUtil::tirutilisateur(Flotte adv) {
 	bool a_tire = FALSE;
 	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
 }
+
+coordonnees tirOrdi()
+{
+	srand((unsigned int) time(NULL));
+	coordonnees coord;
+	int x = rand() % 10;
+	int y = rand() % 10;
+	coord.push_back(x);
+	coord.push_back(y);
+	return coord;
+}
+
+
+
+
+
+
+

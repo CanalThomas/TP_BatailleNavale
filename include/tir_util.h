@@ -3,6 +3,7 @@
 using namespace std;
 #include <vector>
 #include "flotte.h"
+#include "bateau.h"
 
 class TirUtil {
 protected:
@@ -12,3 +13,7 @@ public:
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
 };
+
+coordonnees tirOrdi(); 
+
+
