@@ -7,6 +7,11 @@
 
 using namespace std;
 
+int convertir(char lettre) {
+	int entier = (int)lettre - 97;
+	return entier;
+}
+
 
 void TirUtil::coorddecase() {
 	char lettre;
@@ -28,9 +33,9 @@ void TirUtil::coorddecase() {
 		cout << "Erreur, le caractère n'est pas une entier entre 0 et 9 , recomencez" << endl;
 		cin >> entier;
 	}
-	vector<int> prochain_tir;
-	prochain_tir.push(lettre);
-	prochain_tir.push(entier);
+	pair<int,int> prochain_tir;
+	prochain_tir.first =convertir(lettre);
+	prochain_tir.second=entier;
 	TirUtil.Tir* = prochain_tir;
 }
 
@@ -40,6 +45,14 @@ bool TirUtil::tirutilisateur(Flotte adv) {
 	bool a_tire = FALSE;
 	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
 }
+
+
+
+TirUtil::TirUtil() {
+	Tir = new pair<int,int>;
+}
+
+
 
 coordonnees tirOrdi()
 {
@@ -51,10 +64,3 @@ coordonnees tirOrdi()
 	coord.push_back(y);
 	return coord;
 }
-
-
-
-
-
-
-
