@@ -34,8 +34,8 @@ void TirUtil::coorddecase() {
 		cin >> entier;
 	}
 	coordonnees prochain_tir;
-	prochain_tir.push(convertir(lettre));
-	prochain_tir.push(entier);
+	prochain_tir.push_back(convertir(lettre));
+	prochain_tir.push_back(entier);
 	*(TirUtil.Tir) = prochain_tir;
 }
 
@@ -57,7 +57,7 @@ coordonnees tirOrdi()
 {
 	srand((unsigned int) time(NULL));
 	coordonnees coord;
-	coord.push(rand() % 10);
-	coord.push(rand() % 10);
+	coord.push_back(rand() % 10);
+	coord.push-back(rand() % 10);
 	return coord;
 }
