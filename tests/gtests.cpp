@@ -11,7 +11,7 @@ void test_coordBateau(Bateau b)
         << "Error: " << "L'état général est " << false << " and not " << b.getM_etatGeneral() << "\n";
 }
 
-TEST(test_coordBateau, Test1)
+TEST(testcoordBateau, Test1)
 {
     coordonnees c1;
     coordonnees c2;
@@ -32,13 +32,13 @@ TEST(convertir_test, ASCII_Vers_Int) {
 	EXPECT_EQ(9, convertir('j'));
 }
 
-TEST(coordonnées, utilisateurTir) {
+TEST(coordonnees, utilisateurTir) {
 	//test dans tir_util de coorddecase()
 	SetUp() {
 	TirUtil tir = TirUtil();
 	}
 	//il faut rentrer 'a' et 0 en valeurs
-	cout << "rentrer 'a' puis 0 pour le bon déroulement du test"<<endl;
+	cout << "rentrer 'a' puis 0 pour le bon déroulement du test" <<endl;
 	coorddecase();
 	ASSERT_EQ((tir.Tir*)[1], 0);
 	ASSERT_EQ((tir.Tir*)[2], 0);
