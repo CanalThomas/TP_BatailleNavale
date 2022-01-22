@@ -39,7 +39,7 @@ void TirUtil::coorddecase() {
 	coordonnees prochain_tir;
 	prochain_tir.push_back(convertir(lettre));
 	prochain_tir.push_back(entier);
-	*(TirUtil.Tir) = prochain_tir;
+	Tir = prochain_tir;
 }
 
 bool TirUtil::tirutilisateur(Flotte adv) {
@@ -52,7 +52,7 @@ bool TirUtil::tirutilisateur(Flotte adv) {
 
 
 TirUtil::TirUtil() {
-	Tir = new pair<int,int>;
+	Tir = new coordonnees;
 }
 
 

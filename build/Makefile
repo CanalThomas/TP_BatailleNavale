@@ -124,17 +124,17 @@ run_tests/fast:
 .PHONY : run_tests/fast
 
 #=============================================================================
-# Target rules for targets named project
+# Target rules for targets named Projet_BN
 
 # Build rule for target.
-project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 project
-.PHONY : project
+Projet_BN: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Projet_BN
+.PHONY : Projet_BN
 
 # fast build rule for target.
-project/fast:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
-.PHONY : project/fast
+Projet_BN/fast:
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/build
+.PHONY : Projet_BN/fast
 
 src/Bateau.o: src/Bateau.cpp.o
 
@@ -143,7 +143,7 @@ src/Bateau.o: src/Bateau.cpp.o
 # target to build an object file
 src/Bateau.cpp.o:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Bateau.cpp.o
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/Bateau.cpp.o
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Bateau.cpp.o
 .PHONY : src/Bateau.cpp.o
 
 src/Bateau.i: src/Bateau.cpp.i
@@ -153,7 +153,7 @@ src/Bateau.i: src/Bateau.cpp.i
 # target to preprocess a source file
 src/Bateau.cpp.i:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Bateau.cpp.i
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/Bateau.cpp.i
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Bateau.cpp.i
 .PHONY : src/Bateau.cpp.i
 
 src/Bateau.s: src/Bateau.cpp.s
@@ -163,8 +163,38 @@ src/Bateau.s: src/Bateau.cpp.s
 # target to generate assembly for a file
 src/Bateau.cpp.s:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Bateau.cpp.s
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/Bateau.cpp.s
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Bateau.cpp.s
 .PHONY : src/Bateau.cpp.s
+
+src/Grille.o: src/Grille.cpp.o
+
+.PHONY : src/Grille.o
+
+# target to build an object file
+src/Grille.cpp.o:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Grille.cpp.o
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Grille.cpp.o
+.PHONY : src/Grille.cpp.o
+
+src/Grille.i: src/Grille.cpp.i
+
+.PHONY : src/Grille.i
+
+# target to preprocess a source file
+src/Grille.cpp.i:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Grille.cpp.i
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Grille.cpp.i
+.PHONY : src/Grille.cpp.i
+
+src/Grille.s: src/Grille.cpp.s
+
+.PHONY : src/Grille.s
+
+# target to generate assembly for a file
+src/Grille.cpp.s:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/Grille.cpp.s
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/Grille.cpp.s
+.PHONY : src/Grille.cpp.s
 
 src/flotte.o: src/flotte.cpp.o
 
@@ -173,7 +203,7 @@ src/flotte.o: src/flotte.cpp.o
 # target to build an object file
 src/flotte.cpp.o:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/flotte.cpp.o
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/flotte.cpp.o
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/flotte.cpp.o
 .PHONY : src/flotte.cpp.o
 
 src/flotte.i: src/flotte.cpp.i
@@ -183,7 +213,7 @@ src/flotte.i: src/flotte.cpp.i
 # target to preprocess a source file
 src/flotte.cpp.i:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/flotte.cpp.i
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/flotte.cpp.i
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/flotte.cpp.i
 .PHONY : src/flotte.cpp.i
 
 src/flotte.s: src/flotte.cpp.s
@@ -193,7 +223,7 @@ src/flotte.s: src/flotte.cpp.s
 # target to generate assembly for a file
 src/flotte.cpp.s:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/flotte.cpp.s
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/flotte.cpp.s
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/flotte.cpp.s
 .PHONY : src/flotte.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -202,7 +232,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -211,7 +241,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -220,7 +250,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/tir_util.o: src/tir_util.cpp.o
@@ -230,7 +260,7 @@ src/tir_util.o: src/tir_util.cpp.o
 # target to build an object file
 src/tir_util.cpp.o:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/tir_util.cpp.o
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/tir_util.cpp.o
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/tir_util.cpp.o
 .PHONY : src/tir_util.cpp.o
 
 src/tir_util.i: src/tir_util.cpp.i
@@ -240,7 +270,7 @@ src/tir_util.i: src/tir_util.cpp.i
 # target to preprocess a source file
 src/tir_util.cpp.i:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/tir_util.cpp.i
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/tir_util.cpp.i
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/tir_util.cpp.i
 .PHONY : src/tir_util.cpp.i
 
 src/tir_util.s: src/tir_util.cpp.s
@@ -250,7 +280,7 @@ src/tir_util.s: src/tir_util.cpp.s
 # target to generate assembly for a file
 src/tir_util.cpp.s:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/src/tir_util.cpp.s
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/tir_util.cpp.s
+	$(MAKE) -f CMakeFiles/Projet_BN.dir/build.make CMakeFiles/Projet_BN.dir/src/tir_util.cpp.s
 .PHONY : src/tir_util.cpp.s
 
 tests/gtests.o: tests/gtests.cpp.o
@@ -289,10 +319,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... run_tests"
-	@echo "... project"
+	@echo "... Projet_BN"
 	@echo "... src/Bateau.o"
 	@echo "... src/Bateau.i"
 	@echo "... src/Bateau.s"
+	@echo "... src/Grille.o"
+	@echo "... src/Grille.i"
+	@echo "... src/Grille.s"
 	@echo "... src/flotte.o"
 	@echo "... src/flotte.i"
 	@echo "... src/flotte.s"

@@ -44,11 +44,11 @@ include_directories(${PROJECT_SOURCE_DIR}/googletest/googletest/include)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 # create target
-add_executable(project ${SRC_MAIN} ${SRC_FILES})
+add_executable(Projet_BN ${SRC_MAIN} ${SRC_FILES})
 add_executable(run_tests tests/gtests.cpp ${GTESTS} ${SRC_FILES})
 
 # link OpenGL and GLUT to main project
-target_link_libraries(project ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
+target_link_libraries(Projet_BN ${OPENGL_LIBRARIES} ${GLUT_LIBRARY})
 
 # link gtest (and pthread on Unix) to run_tests project
 target_link_libraries(run_tests ${CMAKE_SOURCE_DIR}/build_gtest/lib/libgtest.a)

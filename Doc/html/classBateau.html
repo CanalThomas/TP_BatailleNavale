@@ -63,28 +63,53 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classBateau-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Bateau Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Bateau_8h_source.html">Bateau.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a41cbe3f1ad1ffe5f0d008e7c09a4966c"><td class="memItemLeft" align="right" valign="top"><a id="a41cbe3f1ad1ffe5f0d008e7c09a4966c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Bateau</b> (int _t, vector&lt; coordonnees &gt; _coords)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#a41cbe3f1ad1ffe5f0d008e7c09a4966c">Bateau</a> (int _t, vector&lt; coordonnees &gt; _coords)</td></tr>
+<tr class="memdesc:a41cbe3f1ad1ffe5f0d008e7c09a4966c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur. <br /></td></tr>
 <tr class="separator:a41cbe3f1ad1ffe5f0d008e7c09a4966c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892520821ef9af1680fd6fa72702fb64"><td class="memItemLeft" align="right" valign="top"><a id="a892520821ef9af1680fd6fa72702fb64"></a>
-vector&lt; <a class="el" href="structsuivi.html">suivi</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getM_etats</b> ()</td></tr>
+vector&lt; <a class="el" href="structsuivi.html">suivi</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#a892520821ef9af1680fd6fa72702fb64">getM_etats</a> ()</td></tr>
+<tr class="memdesc:a892520821ef9af1680fd6fa72702fb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter. <br /></td></tr>
 <tr class="separator:a892520821ef9af1680fd6fa72702fb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2732c3483d999795441afe66ac20e25"><td class="memItemLeft" align="right" valign="top"><a id="aa2732c3483d999795441afe66ac20e25"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>getM_etatGeneral</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#aa2732c3483d999795441afe66ac20e25">getM_etatGeneral</a> ()</td></tr>
+<tr class="memdesc:aa2732c3483d999795441afe66ac20e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter. <br /></td></tr>
 <tr class="separator:aa2732c3483d999795441afe66ac20e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade596091c2b5839fa7a0e43776f7b8c6"><td class="memItemLeft" align="right" valign="top"><a id="ade596091c2b5839fa7a0e43776f7b8c6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>estTouche</b> (vector&lt; int &gt; _coord)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#ade596091c2b5839fa7a0e43776f7b8c6">estTouche</a> (vector&lt; int &gt; _coord)</td></tr>
+<tr class="memdesc:ade596091c2b5839fa7a0e43776f7b8c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui modifie l'état d'une partie du bateau de coordonnées _coord. <br /></td></tr>
 <tr class="separator:ade596091c2b5839fa7a0e43776f7b8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:adeaeb72392468e1a353529ac08ee9aff"><td class="memItemLeft" align="right" valign="top"><a id="adeaeb72392468e1a353529ac08ee9aff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#adeaeb72392468e1a353529ac08ee9aff">m_tailleBateau</a></td></tr>
+<tr class="memdesc:adeaeb72392468e1a353529ac08ee9aff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille du bateau. <br /></td></tr>
+<tr class="separator:adeaeb72392468e1a353529ac08ee9aff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f461f64fcf014b36834717cec87d0ac"><td class="memItemLeft" align="right" valign="top"><a id="a7f461f64fcf014b36834717cec87d0ac"></a>
+vector&lt; <a class="el" href="structsuivi.html">suivi</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#a7f461f64fcf014b36834717cec87d0ac">m_etats</a></td></tr>
+<tr class="memdesc:a7f461f64fcf014b36834717cec87d0ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vecteur qui permet de donner les coordonnées et états de chaque partie du bateau. <br /></td></tr>
+<tr class="separator:a7f461f64fcf014b36834717cec87d0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24d20bcb57231860f29d02bead6ab7a"><td class="memItemLeft" align="right" valign="top"><a id="ae24d20bcb57231860f29d02bead6ab7a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBateau.html#ae24d20bcb57231860f29d02bead6ab7a">m_etatGeneral</a></td></tr>
+<tr class="memdesc:ae24d20bcb57231860f29d02bead6ab7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat général du bateau. <br /></td></tr>
+<tr class="separator:ae24d20bcb57231860f29d02bead6ab7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CLASSE BATEAU <br  />
+ Cette classe permet d'instancier des bateaux, en prenant comme attributs la taille du bateau, un vecteur de suivi (correspondant à chaque partie du bateau) et un état général ("coulé = true" / "pas coulé = false") </p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/include/<a class="el" href="Bateau_8h_source.html">Bateau.h</a></li>
 <li>/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.cpp</li>
 </ul>

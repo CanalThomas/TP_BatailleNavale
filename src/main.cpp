@@ -6,8 +6,9 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <GL/glext.h>
-#include <glm.hpp>
-#include <ext.hpp>
+#include <GL/glcorearb.h>
+//#include <glm.hpp>
+//#include <ext.hpp>
 
 #define GL_GLEXT_PROTOTYPES
 using namespace std;
@@ -20,6 +21,11 @@ using namespace std;
 
 int width = 1280;
 int height = 720;
+
+//Pour les points 
+typedef float Vertex[3];
+//Pour les vectedurs d'indices
+typedef unsigned int Ind[4];
 
 //Pour les tests d'affichage de grille
 int gjoueur[10][10];
@@ -89,9 +95,11 @@ void affGrilleBG() {
     glEnd();
 }
 
+
+
 void affGrilleLines(int numeroGrille = 1) {
-    std::vector<glm::vec3> vertices;
-    std::vector<glm::uvec4> indices;
+    std::vector<Vertex> vertices;
+    std::vector<Ind> indices;
     int slices = 10;
     for (int j = 0; j <= slices; ++j) {
         for (int i = 0; i <= slices; ++i) {
@@ -114,7 +122,9 @@ void affGrilleLines(int numeroGrille = 1) {
                 cout << "Erreur dans affGrilleLines : numero de grille invalide" << endl;
                 exit(1);
             }
-            vertices.push_back(glm::vec3(x, y, z));
+            Vertex v;
+            v[0] = x; v[1]=y; v[2]=z;
+            vertices.push_back(v);
         }
     }
 
@@ -123,9 +133,11 @@ void affGrilleLines(int numeroGrille = 1) {
 
             int row1 = j * (slices + 1);
             int row2 = (j + 1) * (slices + 1);
-
-            indices.push_back(glm::uvec4(row1 + i, row1 + i + 1, row1 + i + 1, row2 + i + 1));
-            indices.push_back(glm::uvec4(row2 + i + 1, row2 + i, row2 + i, row1 + i));
+            Ind IND1, IND2;
+            IND1[0]=row1 + i; IND1[1]=row1 + i+1; IND1[2]=row1 + i+1; IND1[3]=row2 + i+1;
+            IND2[0]=row2 + i+1; IND2[1]=row2 + i; IND2[2]=row2 + i; IND2[3]=row1 + i;
+            indices.push_back(IND1);
+            indices.push_back(IND2);
 
         }
     }
@@ -136,14 +148,14 @@ void affGrilleLines(int numeroGrille = 1) {
     GLuint vbo;
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(glm::vec3), glm::value_ptr(vertices[0]), GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), glm::value_ptr(vertices[0]), GL_STATIC_DRAW);
     glEnableVertexAttribArray(0);
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
 
     GLuint ibo;
     glGenBuffers(1, &ibo);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ibo);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(glm::uvec4), glm::value_ptr(indices[0]), GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(Ind), glm::value_ptr(indices[0]), GL_STATIC_DRAW);
 
     glBindVertexArray(0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
