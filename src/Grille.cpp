@@ -2,7 +2,7 @@
 #include "flotte.h"
 #include "Bateau.h"
 
-Grille::grille()
+grille::grille()
 {
 	for (int i = 0;i<10;i++)
 	{
@@ -13,7 +13,7 @@ Grille::grille()
 	}
 }
 
-Grille::grille(flotte Util)
+grille::grille(flotte Util)
 {
 	//initialiser la grille à 0
 	for (int i = 0;i<10;i++)
@@ -34,12 +34,12 @@ Grille::grille(flotte Util)
 	}
 }
 
-void Grille::MAJAttaqueOrdi()
+void grille::MAJAttaqueOrdi()
 {
 
 }
 
-void Grille::MAJFlotteUtil(flotte Util)
+void grille::MAJFlotteUtil(flotte Util)
 {
 	coordonnees coord_attaque;
 	coord_attaque = tirOrdi();

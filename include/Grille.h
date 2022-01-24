@@ -11,9 +11,6 @@ class flotte;
 
 
 class grille {
-	private :
-		int m_grid[10][10];
-
 
 	public:
 		int m_grid[10][10];
@@ -30,6 +27,6 @@ class grille {
 		//Mise à jour grille de notre flotte
 		void MAJFlotteUtil();
 
-}
+};
 
 #endif 
