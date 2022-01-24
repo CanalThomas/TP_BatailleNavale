@@ -1,6 +1,6 @@
 #include "Grille.h"
 #include "flotte.h"
-#include "bateau.h"
+#include "Bateau.h"
 
 Grille::grille()
 {

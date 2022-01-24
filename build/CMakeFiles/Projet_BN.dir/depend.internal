@@ -5,6 +5,7 @@ CMakeFiles/Projet_BN.dir/src/Bateau.cpp.o
  ../include/Bateau.h
  /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.cpp
 CMakeFiles/Projet_BN.dir/src/Grille.cpp.o
+ ../include/Bateau.h
  ../include/Grille.h
  ../include/flotte.h
  /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Grille.cpp

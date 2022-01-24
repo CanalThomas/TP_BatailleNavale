@@ -27,9 +27,7 @@ bool Bateau::getM_etatGeneral(){
 //Fonction qui modifie l'état d'une partie du bateau de coordonnées _coord
 bool Bateau::estTouche(vector<int> _coord){
 	bool touche = false;
-	for (int i=0;i<_t;i++){
-void Bateau::estTouche(vector<int> _coord){
-	for (int i=0;i<_coord.size();i++){
+	for (int i=0;i<m_etats.size();i++){
 		if (m_etats[i].position == _coord){
 			touche = true;
 			m_etats[i].etat = touche;
