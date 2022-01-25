@@ -6,5 +6,5 @@ CXX_FLAGS = --coverage   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale -I/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/googletest/googletest/include -I/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/include 
+CXX_INCLUDES = -I/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale -I/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/googletest/googletest/include -I/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/include 
 

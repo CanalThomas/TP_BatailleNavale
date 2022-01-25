@@ -1,4 +1,5 @@
 #include "Grille.h"
+#include "tir_util.h"
 
 
 grille::grille()
@@ -33,15 +34,32 @@ grille::grille(Flotte Util)
 	}
 }
 
-void grille::MAJAttaqueOrdi()
+void grille::MAJAttaqueOrdi(Flotte adv)
 {
+	coordonnees coord_attaque;
+
+	TirUtil tir = TirUtil();
+	tir.tirutilisateur(adv);
+
+	//récupérer les coordonné de l'attaue de l'utilisateur pour faire la mise à jour de la grille
+	coord_attaque = tir.getCoord_tir();
+
+	for (int i=0;i<adv.getflotte().size();i++)
+	{
+		if (adv.getflotte()[i].estTouche(coord_attaque))
+		{
+			m_grid[coord_attaque[0]][coord_attaque[1]] = 2;
+		}
+	}
 
 }
 
 void grille::MAJFlotteUtil(Flotte Util)
 {
 	coordonnees coord_attaque;
+
 	coord_attaque = tirOrdi();
+
 	for (int i=0;i<Util.getflotte().size();i++)
 	{
 		if (Util.getflotte()[i].estTouche(coord_attaque))

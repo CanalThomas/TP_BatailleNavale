@@ -49,6 +49,10 @@ bool TirUtil::tirutilisateur(Flotte adv) {
 	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
 }
 
+coordonnees TirUtil::getCoord_tir()
+{
+	return Tir;
+}
 
 
 TirUtil::TirUtil() {
@@ -56,6 +60,7 @@ TirUtil::TirUtil() {
 }
 
 
+//fonction de tir de l'ordinateur
 coordonnees tirOrdi()
 {
 	srand((unsigned int) time(NULL));

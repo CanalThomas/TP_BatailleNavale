@@ -12,7 +12,10 @@ public:
 	TirUtil();
 	void coorddecase();
 	bool tirutilisateur(Flotte adv);
+
+	coordonnees getCoord_tir();
 };
+
 coordonnees tirOrdi();
 
 
