@@ -5,10 +5,11 @@
 #include<iostream>
 #include<vector>
 #include <fstream>
+#include"Bateau.h"
 
 #define ASCII_0 48
 
-class Bateau;
+
 
 class Flotte
 {

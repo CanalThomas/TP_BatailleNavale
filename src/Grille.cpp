@@ -1,6 +1,5 @@
 #include "Grille.h"
-#include "flotte.h"
-#include "Bateau.h"
+
 
 grille::grille()
 {
@@ -13,7 +12,7 @@ grille::grille()
 	}
 }
 
-grille::grille(flotte Util)
+grille::grille(Flotte Util)
 {
 	//initialiser la grille à 0
 	for (int i = 0;i<10;i++)
@@ -25,11 +24,11 @@ grille::grille(flotte Util)
 	}
 
 	//ajouter les bateaux de l'utilisateur sur la grille
-	for (int i=;i<Util.size();i++)
+	for (int i=0;i<Util.getflotte().size();i++)
 	{
-		for (int j=0;j<Util[i].getM_etats().size();j++)
+		for (int j=0;j<Util.getflotte()[i].getM_etats().size();j++)
 		{
-			m_grid[Util[i].getM_etats()[j].coordonnees[0]][Util[i].getM_etats()[j].coordonnees[1]] = 1;
+			m_grid[Util.getflotte()[i].getM_etats()[j].position[0]][Util.getflotte()[i].getM_etats()[j].position[1]] = 1;
 		}
 	}
 }
@@ -39,13 +38,13 @@ void grille::MAJAttaqueOrdi()
 
 }
 
-void grille::MAJFlotteUtil(flotte Util)
+void grille::MAJFlotteUtil(Flotte Util)
 {
 	coordonnees coord_attaque;
 	coord_attaque = tirOrdi();
-	for (int i=;i<Util.size();i++)
+	for (int i=0;i<Util.getflotte().size();i++)
 	{
-		if (Util[i].estTouche(coord_attaque))
+		if (Util.getflotte()[i].estTouche(coord_attaque))
 		{
 			m_grid[coord_attaque[0]][coord_attaque[1]] = 2;
 		}

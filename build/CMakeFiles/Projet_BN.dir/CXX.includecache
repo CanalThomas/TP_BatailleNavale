@@ -23,6 +23,8 @@ vector
 -
 flotte.h
 ../include/flotte.h
+tir_util.h
+../include/tir_util.h
 
 ../include/flotte.h
 iostream
@@ -31,12 +33,18 @@ vector
 -
 fstream
 -
+Bateau.h
+../include/Bateau.h
+
+../include/tir_util.h
+iostream
+-
+vector
+-
+flotte.h
+../include/flotte.h
 
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Grille.cpp
 Grille.h
 /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Grille.h
-flotte.h
-/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/flotte.h
-Bateau.h
-/home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/src/Bateau.h
 

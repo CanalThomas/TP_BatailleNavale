@@ -5,10 +5,10 @@
 #include <string>
 #include <vector>
 
-class flotte;
+
 #include "flotte.h"
 
-
+#include "tir_util.h"
 
 class grille {
 
@@ -25,7 +25,7 @@ class grille {
 		void MAJAttaqueOrdi();
 
 		//Mise à jour grille de notre flotte
-		void MAJFlotteUtil();
+		void MAJFlotteUtil(Flotte Util);
 
 };
 
