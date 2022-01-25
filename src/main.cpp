@@ -98,7 +98,7 @@ void affGrilleBG() {
 
 
 
-void affGrilleLines(int numeroGrille = 1) {
+/*void affGrilleLines(int numeroGrille = 1) {
     vector<vector<float>> vertices;
     vector<vector<int>> indices;
     int slices = 10;
@@ -172,7 +172,7 @@ void affGrilleLines(int numeroGrille = 1) {
     if (numeroGrille == 1) {
         affGrilleLines(2);
     }
-}
+}*/
 
 void affGrilleInfos(int g[10][10],bool joueur) {
     glDisable(GL_TEXTURE_2D);
@@ -274,10 +274,10 @@ void glInit(int argc, char* argv[]) {
 
     // Définition des fonctions de callbacks
     glutDisplayFunc(affichage);
-    glutKeyboardFunc(clavier);
-    glutMouseFunc(souris);
+    //glutKeyboardFunc(clavier);
+    //glutMouseFunc(souris);
     glutReshapeFunc(redimensionner);
-    glewInit();
+    //glewInit();
 }
 
 int main(int argc, char* argv[]) {

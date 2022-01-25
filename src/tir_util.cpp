@@ -21,12 +21,12 @@ void TirUtil::coorddecase()
 {
 	char lettre;
 	int entier;
-	glRasterPos2f(0, 0);
+	/*glRasterPos2f(0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
 	const unsigned char* t = reinterpret_cast<const unsigned char*>("Entrez votre cible au clavier (lettre minuscule puis numéro)");
-	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, t);
+	//glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, t);
 	cin >> lettre;
 	bool test = ((lettre >= 'a' && lettre <= 'j'));
 	while (!test){
