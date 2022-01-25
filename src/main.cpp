@@ -250,7 +250,7 @@ GLvoid affichage() {
     glLoadIdentity();
     gluLookAt(0, 0, 2, 0, 0, 0, 0, 1, 0);
     affGrilleBG();
-    affGrilleLines();
+    //affGrilleLines();
     
     affGrilleInfos(gjoueur,true);
     affGrilleInfos(gordi,false);
@@ -274,8 +274,8 @@ void glInit(int argc, char* argv[]) {
 
     // Définition des fonctions de callbacks
     glutDisplayFunc(affichage);
-    //glutKeyboardFunc(clavier);
-    //glutMouseFunc(souris);
+    glutKeyboardFunc(clavier);
+    glutMouseFunc(souris);
     glutReshapeFunc(redimensionner);
     glewInit();
 }

@@ -1,6 +1,7 @@
 //#include <Windows.h>
 #include <iostream>
 #include <GL/gl.h>
+#include <GL/freeglut.h>
 #include <GL/glut.h>
 #include <string>
 #include "tir_util.h"
@@ -16,14 +17,16 @@ int convertir(char lettre) {
 }
 
 
-void TirUtil::coorddecase() {
+void TirUtil::coorddecase()
+{
 	char lettre;
 	int entier;
 	glRasterPos2f(0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
-	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, "Entrez votre cible au clavier (lettre minuscule puis numéro)");
+	const unsigned char* t = reinterpret_cast<const unsigned char*>("Entrez votre cible au clavier (lettre minuscule puis numéro)");
+	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, t);
 	cin >> lettre;
 	bool test = ((lettre >= 'a' && lettre <= 'j'));
 	while (!test){
@@ -42,12 +45,12 @@ void TirUtil::coorddecase() {
 	Tir = prochain_tir;
 }
 
-bool TirUtil::tirutilisateur() {
+/*bool TirUtil::tirutilisateur() {
 	// on prend la flotte adv et la case ciblée par le joueur et on gère la maj de la grille adv
 	TirUtil.coorddecase();
 	bool a_tire = FALSE;
 	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
-}
+}*/
 
 coordonnees TirUtil::getCoord_tir()
 {
@@ -56,7 +59,8 @@ coordonnees TirUtil::getCoord_tir()
 
 
 TirUtil::TirUtil() {
-	Tir = new coordonnees;
+	Tir.push_back(0);
+	Tir.push_back(0);
 }
 
 

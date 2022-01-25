@@ -39,7 +39,7 @@ void grille::MAJAttaqueOrdi(Flotte adv)
 	coordonnees coord_attaque;
 
 	TirUtil tir = TirUtil();
-	tir.tirutilisateur();
+	tir.coorddecase();
 
 	//récupérer les coordonné de l'attaue de l'utilisateur pour faire la mise à jour de la grille
 	coord_attaque = tir.getCoord_tir();

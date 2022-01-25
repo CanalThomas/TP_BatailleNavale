@@ -37,6 +37,8 @@ iostream
 -
 GL/gl.h
 -
+GL/freeglut.h
+-
 GL/glut.h
 -
 string
