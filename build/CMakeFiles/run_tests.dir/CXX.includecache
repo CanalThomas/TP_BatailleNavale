@@ -44,21 +44,11 @@ vector
 flotte.h
 ../include/flotte.h
 
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Bateau.cpp
-Bateau.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Bateau.h
-
 /home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Grille.cpp
 Grille.h
 /home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Grille.h
-
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/flotte.cpp
-flotte.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/flotte.h
-Bateau.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Bateau.h
-random
--
+tir_util.h
+/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.h
 
 /home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.cpp
 iostream

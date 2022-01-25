@@ -18,4 +18,6 @@ public:
 
 coordonnees tirOrdi();
 
+int convertir(char lettre);
+
 
