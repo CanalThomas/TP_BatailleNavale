@@ -34,14 +34,13 @@ TEST(convertir_test, ASCII_Vers_Int) {
 
 TEST(coordonnees, utilisateurTir) {
 	//test dans tir_util de coorddecase()
-	SetUp() {
+	SetUp();
 	TirUtil tir = TirUtil();
-	}
 	//il faut rentrer 'a' et 0 en valeurs
 	cout << "rentrer 'a' puis 0 pour le bon déroulement du test" <<endl;
-	coorddecase();
-	ASSERT_EQ((tir.Tir*)[1], 0);
-	ASSERT_EQ((tir.Tir*)[2], 0);
+	tir.coorddecase();
+	ASSERT_EQ((tir.getCoord_tir())[1], 0);
+	ASSERT_EQ((tir.getCoord_tir())[2], 0);
 
 }
 

@@ -50,23 +50,3 @@ Grille.h
 tir_util.h
 /home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.h
 
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.cpp
-iostream
--
-GL/gl.h
--
-GL/GLUT.h
--
-string
--
-tir_util.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.h
-
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/tests/gtests.cpp
-gtest/gtest.h
--
-tir_util.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/tests/tir_util.h
-Bateau.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/tests/Bateau.h
-

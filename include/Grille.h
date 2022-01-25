@@ -22,7 +22,7 @@ class grille {
 
 
 		//Mise à jour grille d'attaque 
-		void MAJAttaqueOrdi();
+		void MAJAttaqueOrdi(Flotte adv);
 
 		//Mise à jour grille de notre flotte
 		void MAJFlotteUtil(Flotte Util);
