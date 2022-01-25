@@ -14,18 +14,6 @@ string
 vector
 -
 
-../include/Grille.h
-iostream
--
-string
--
-vector
--
-flotte.h
-../include/flotte.h
-tir_util.h
-../include/tir_util.h
-
 ../include/flotte.h
 iostream
 -
@@ -44,9 +32,15 @@ vector
 flotte.h
 ../include/flotte.h
 
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Grille.cpp
-Grille.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/Grille.h
+/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.cpp
+iostream
+-
+GL/gl.h
+-
+GL/glut.h
+-
+string
+-
 tir_util.h
 /home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.h
 

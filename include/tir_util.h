@@ -11,7 +11,7 @@ protected:
 public:
 	TirUtil();
 	void coorddecase();
-	bool tirutilisateur(Flotte adv);
+	bool tirutilisateur();
 
 	coordonnees getCoord_tir();
 };

@@ -32,17 +32,51 @@ TEST(convertir_test, ASCII_Vers_Int) {
 	EXPECT_EQ(9, convertir('j'));
 }
 
-TEST(coordonnees, utilisateurTir) {
-	//test dans tir_util de coorddecase()
-	SetUp();
-	TirUtil tir = TirUtil();
-	//il faut rentrer 'a' et 0 en valeurs
-	cout << "rentrer 'a' puis 0 pour le bon déroulement du test" <<endl;
-	tir.coorddecase();
-	ASSERT_EQ((tir.getCoord_tir())[1], 0);
-	ASSERT_EQ((tir.getCoord_tir())[2], 0);
+//test de la classe tirUtil
+class TirUtilTest:public::testing::Test
+{
+protected:
+	virtual void SetUp()
+	{
+		//il faut rentrer 'a' et 0 en valeurs
+		cout << "rentrer 'a' puis 0 pour le bon déroulement du test" <<endl;
+		tir.coorddecase();
+	}
 
+	virtual void TearDown()
+	{//
+	}
+
+	TirUtil tir = TirUtil();
+};
+
+
+TEST_F(TirUtilTest, utilisateurTir) 
+{
+	ASSERT_EQ((tir.getCoord_tir())[0], 0);
+	ASSERT_EQ((tir.getCoord_tir())[1], 0);
 }
+
+//test de la classe grille et ses méthodes
+/*class GrilleTest:public::testing::Test
+{
+protected:
+	virtual void SetUp()
+	{
+		grille_Utilsateur.MAJFlotteUtil(flotte_util);
+		grille_Ordi.MAJAttaqueOrdi(flotte_ordi);
+
+	}
+
+	virtual void TearDown()
+	{//
+	}
+
+	grille_Utilsateur = grille(flotte_util);
+	grille_Ordi = grille(flotte_ordi);
+};
+*/
+
 
 
 int main(int argc, char **argv)
