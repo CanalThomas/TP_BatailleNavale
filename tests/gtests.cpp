@@ -58,6 +58,48 @@ TEST_F(TirUtilTest, utilisateurTir)
 }
 
 
+/////////////////////	FLOTTE TESTS	//////////////////////////
+class FlotteTest:public::testing::Test
+{
+protected:
+	virtual void SetUp()
+	{
+		
+	}
+
+	virtual void TearDown()
+	{//
+	}
+
+	Flotte flottePc = Flotte();
+	Flotte flotteUser = Flotte("../grille.txt");
+	
+};
+
+
+TEST_F(FlotteTest, flottePc) 
+{
+	std::vector<Bateau> f = flottePc.getflotte();
+	int testCoords = 0;
+	for(int i = 0; i<f.size();i++)
+	{
+		for(int j = 0; j<f[i].getM_etats().size();j++)
+		{
+			testCoords = f[i].getM_etats()[j].position[0] > 0 &&
+				f[i].getM_etats()[j].position[1] > 0 &&
+				f[i].getM_etats()[j].position[0] < 10 &&
+				f[i].getM_etats()[j].position[1] < 10;
+			EXPECT_EQ(1, testCoords);
+		}
+	}
+}
+
+
+
+
+
+
+
 int main(int argc, char **argv)
 {
 
