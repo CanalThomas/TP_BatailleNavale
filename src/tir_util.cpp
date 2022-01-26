@@ -24,19 +24,20 @@ void TirUtil::coorddecase()
 	/*glRasterPos2f(0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
+	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales
 	const unsigned char* t = reinterpret_cast<const unsigned char*>("Entrez votre cible au clavier (lettre minuscule puis numéro)");
-	//glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, t);
+	glutBitmapString(GLUT_BITMAP_TIMES_ROMAN_24, t);*/ //méthode non conservée pour l'affichage des consignes
+	cout << "Entrez votre cible au clavier (lettre minuscule puis numéro)"<<endl;
 	cin >> lettre;
 	bool test = ((lettre >= 'a' && lettre <= 'j'));
 	while (!test){
-		cout << "Erreur, le caractère n'est pas une lettre possible, recomencez" << endl;
+		cout << "Erreur, le caractère n'est pas une lettre possible, recommencez" << endl;
 		cin >> lettre;
 	}
 	cin >> entier;
 	bool test2 = (entier >= 0 && entier < 10);
 	while (!test2){
-		cout << "Erreur, le caractère n'est pas une entier entre 0 et 9 , recomencez" << endl;
+		cout << "Erreur, le caractère n'est pas une entier entre 0 et 9 , recommencez" << endl;
 		cin >> entier;
 	}
 	coordonnees prochain_tir;
