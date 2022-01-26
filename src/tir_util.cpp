@@ -12,6 +12,7 @@ int windowWidth;
 int windowHeight;
 
 int convertir(char lettre) {
+	// convertir un char en entier correspondant (d'où l'imposition de la minuscule)
 	int entier = (int)lettre - 97;
 	return entier;
 }
@@ -19,6 +20,7 @@ int convertir(char lettre) {
 
 void TirUtil::coorddecase()
 {
+	// récupérer la commande utilisateur à l'aide de cin
 	char lettre;
 	int entier;
 	/*glRasterPos2f(0, 0);
