@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getm_5fetatgeneral_26',['getM_etatGeneral',['../classBateau.html#aa2732c3483d999795441afe66ac20e25',1,'Bateau']]],
-  ['getm_5fetats_27',['getM_etats',['../classBateau.html#a892520821ef9af1680fd6fa72702fb64',1,'Bateau']]]
+  ['flotte_34',['Flotte',['../classFlotte.html#ad711a0e7d175bfd428497185aa13851b',1,'Flotte::Flotte()'],['../classFlotte.html#a0bb73f446c185bc74b31e62bbbc4135a',1,'Flotte::Flotte(std::string nfichier)']]]
 ];

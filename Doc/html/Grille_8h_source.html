@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/include/Grille.h Source File</title>
+<title>Bataille Navale - Projet MEDEV: /home/eleve/Documents/MEDEV_BN/TP_BatailleNavale/include/Grille.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Bataille Navale - Projet MEDEV
    </div>
   </td>
  </tr>
@@ -76,37 +76,35 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>flotte;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;flotte.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;tir_util.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classgrille.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgrille.html">grille</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    private :</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> m_grid[10][10];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classgrille.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classgrille.html">grille</a> {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">int</span> m_grid[10][10];</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">//Constructeur grille qu&#39;on attaque donc vide initialement</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classgrille.html">grille</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">//Constructeur grille de notre flotte</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classgrille.html">grille</a>(<a class="code" href="classFlotte.html">Flotte</a> Util);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classgrille.html#aeb0c22bbd65c75360caba9fa95b68da6">   20</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classgrille.html#aeb0c22bbd65c75360caba9fa95b68da6">m_grid</a>[10][10];</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classgrille.html#ab1997c45231f65d0ecaccac8901c588e">grille</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classgrille.html#ab1997c45231f65d0ecaccac8901c588e">grille</a>(<a class="code" href="classFlotte.html">Flotte</a> Util);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">//Mise à jour grille d&#39;attaque </span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> MAJAttaqueOrdi();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">//Mise à jour grille de notre flotte</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> MAJFlotteUtil();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgrille.html#ad020cff25d5b50eac7ba47bf8499ecaa">MAJAttaqueOrdi</a>(<a class="code" href="classFlotte.html">Flotte</a> adv);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classgrille.html#ae663049df93674fbe25d6a1faef8c670">MAJFlotteUtil</a>(<a class="code" href="classFlotte.html">Flotte</a> Util);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassgrille_html"><div class="ttname"><a href="classgrille.html">grille</a></div><div class="ttdef"><b>Definition:</b> Grille.h:13</div></div>
-<div class="ttc" id="aclassFlotte_html"><div class="ttname"><a href="classFlotte.html">Flotte</a></div><div class="ttdef"><b>Definition:</b> flotte.h:13</div></div>
+<div class="ttc" id="aclassgrille_html"><div class="ttname"><a href="classgrille.html">grille</a></div><div class="ttdef"><b>Definition:</b> Grille.h:16</div></div>
+<div class="ttc" id="aclassFlotte_html"><div class="ttname"><a href="classFlotte.html">Flotte</a></div><div class="ttdef"><b>Definition:</b> flotte.h:15</div></div>
+<div class="ttc" id="aclassgrille_html_ae663049df93674fbe25d6a1faef8c670"><div class="ttname"><a href="classgrille.html#ae663049df93674fbe25d6a1faef8c670">grille::MAJFlotteUtil</a></div><div class="ttdeci">void MAJFlotteUtil(Flotte Util)</div><div class="ttdoc">Mise à jour grille de notre flotte.</div><div class="ttdef"><b>Definition:</b> Grille.cpp:67</div></div>
+<div class="ttc" id="aclassgrille_html_ad020cff25d5b50eac7ba47bf8499ecaa"><div class="ttname"><a href="classgrille.html#ad020cff25d5b50eac7ba47bf8499ecaa">grille::MAJAttaqueOrdi</a></div><div class="ttdeci">void MAJAttaqueOrdi(Flotte adv)</div><div class="ttdoc">Mise à jour grille d'attaque.</div><div class="ttdef"><b>Definition:</b> Grille.cpp:44</div></div>
+<div class="ttc" id="aclassgrille_html_ab1997c45231f65d0ecaccac8901c588e"><div class="ttname"><a href="classgrille.html#ab1997c45231f65d0ecaccac8901c588e">grille::grille</a></div><div class="ttdeci">grille()</div><div class="ttdoc">Constructeur grille qu'on attaque donc vide initialement.</div><div class="ttdef"><b>Definition:</b> Grille.cpp:6</div></div>
+<div class="ttc" id="aclassgrille_html_aeb0c22bbd65c75360caba9fa95b68da6"><div class="ttname"><a href="classgrille.html#aeb0c22bbd65c75360caba9fa95b68da6">grille::m_grid</a></div><div class="ttdeci">int m_grid[10][10]</div><div class="ttdoc">Attribut m_grid qui correspond à un tableau statique de taille 10x10 d'entiers, qui va représenter un...</div><div class="ttdef"><b>Definition:</b> Grille.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

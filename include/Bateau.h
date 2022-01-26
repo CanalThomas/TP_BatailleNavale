@@ -34,15 +34,15 @@ class Bateau {
 
 	public :
 
-		///Constructeur 
+		///Constructeur de la classe bateau  
 		Bateau(int _t, vector<coordonnees> _coords);
 
-		///Getter
+		///Getter du bateau
 		vector<suivi> getM_etats();
-		///Getter
+		///Getter de l'état du bateau
 		bool getM_etatGeneral();
  
- 		///Fonction qui modifie l'état d'une partie du bateau de coordonnées _coord
+ 		///Fonction estTouché qui prend en argument des coordonnées et renvoie un booleen
 		bool estTouche(vector<int> _coord);
 };
 

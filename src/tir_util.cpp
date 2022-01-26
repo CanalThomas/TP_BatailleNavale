@@ -16,7 +16,8 @@ int convertir(char lettre) {
 	return entier;
 }
 
-
+///Méthode qui permet de récupérer les coordonnées de la case que l'utilisateur veut attaquer. 
+///On stocke ensuite ces coordonnées dans l'attribut Tir.
 void TirUtil::coorddecase()
 {
 	char lettre;
@@ -52,12 +53,13 @@ void TirUtil::coorddecase()
 	// INSERER FONCTION DE LA CLASSE FLOTTE QUI PREND VECT<INT> + FLOTTE 
 }*/
 
+///Renvoie les coordonnées du Tir
 coordonnees TirUtil::getCoord_tir()
 {
 	return Tir;
 }
 
-
+///Initialise le Tir sur [0,0] par défaut.
 TirUtil::TirUtil() {
 	Tir.push_back(0);
 	Tir.push_back(0);

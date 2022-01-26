@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Flotte Class Reference</title>
+<title>Bataille Navale - Projet MEDEV: Flotte Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">Bataille Navale - Projet MEDEV
    </div>
   </td>
  </tr>
@@ -69,24 +69,33 @@ $(function() {
 <div class="title">Flotte Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="flotte_8h_source.html">flotte.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad711a0e7d175bfd428497185aa13851b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlotte.html#ad711a0e7d175bfd428497185aa13851b">Flotte</a> ()</td></tr>
+<tr class="memdesc:ad711a0e7d175bfd428497185aa13851b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la flotte pour une flotte Ordinateur (bateaux définis aléatoirement)  <a href="classFlotte.html#ad711a0e7d175bfd428497185aa13851b">More...</a><br /></td></tr>
 <tr class="separator:ad711a0e7d175bfd428497185aa13851b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bb73f446c185bc74b31e62bbbc4135a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlotte.html#a0bb73f446c185bc74b31e62bbbc4135a">Flotte</a> (std::string nfichier)</td></tr>
+<tr class="memdesc:a0bb73f446c185bc74b31e62bbbc4135a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la flotte pour une flotte Utilisateur (bateaux définis à partir d'un document texte)  <a href="classFlotte.html#a0bb73f446c185bc74b31e62bbbc4135a">More...</a><br /></td></tr>
 <tr class="separator:a0bb73f446c185bc74b31e62bbbc4135a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e740ec24c325663650bc0da0a6ab2f"><td class="memItemLeft" align="right" valign="top"><a id="a00e740ec24c325663650bc0da0a6ab2f"></a>
-std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getflotte</b> ()</td></tr>
+std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlotte.html#a00e740ec24c325663650bc0da0a6ab2f">getflotte</a> ()</td></tr>
+<tr class="memdesc:a00e740ec24c325663650bc0da0a6ab2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter. <br /></td></tr>
 <tr class="separator:a00e740ec24c325663650bc0da0a6ab2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3fcdba16f646e63b34cf05af2124ce6a"><td class="memItemLeft" align="right" valign="top"><a id="a3fcdba16f646e63b34cf05af2124ce6a"></a>
-std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_flotte</b></td></tr>
+std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFlotte.html#a3fcdba16f646e63b34cf05af2124ce6a">m_flotte</a></td></tr>
+<tr class="memdesc:a3fcdba16f646e63b34cf05af2124ce6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vecteur de bateaux qui représente la flotte. <br /></td></tr>
 <tr class="separator:a3fcdba16f646e63b34cf05af2124ce6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>CLASSE FLOTTE <br  />
+ Classe qui va contenir tous les bateaux (dans un vecteur) d'une flotte </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad711a0e7d175bfd428497185aa13851b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad711a0e7d175bfd428497185aa13851b">&#9670;&nbsp;</a></span>Flotte() <span class="overload">[1/2]</span></h2>
 
@@ -101,6 +110,8 @@ std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de la flotte pour une flotte Ordinateur (bateaux définis aléatoirement) </p>
 <p>CONSTRUCTEUR POUR LA FLOTTE PC</p>
 <p>Cette flotte est cree aleatoirement. On tire au sort des coordonnees et un sens (vertical ou horizontal) puis on teste si le bateau peut y etre placé : est ce qu'il reste dans la grille 10*10? est-ce que toutes les cases sont libres ? Si oui, on va ajouter ce bateau a la flotte et on va mettre a 1 les cases qu'il utilise dans la grille </p><pre class="fragment">                                                                                                                /// 
 </pre> 
@@ -121,6 +132,8 @@ std::vector&lt; <a class="el" href="classBateau.html">Bateau</a> &gt;&#160;</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de la flotte pour une flotte Utilisateur (bateaux définis à partir d'un document texte) </p>
 <p>CONSTRUCTEUR POUR LA FLOTTE JOUEUR</p>
 <p>Cette flotte est cree à partir d'un fichier texte. La convention de nommage est : un chiffre (de 0 à 4) pour l'id du bateau qui renseigne aussi sur sa taille un chiffre pour la place dans ce bateau (de 0 à tailleBateau) un booleen : 1 vertical/ 0 horizontal /// </p>
 
