@@ -50,33 +50,12 @@ protected:
 	TirUtil tir = TirUtil();
 };
 
-
+//test de la methode cooddecase de la classe tir_util
 TEST_F(TirUtilTest, utilisateurTir) 
 {
 	ASSERT_EQ((tir.getCoord_tir())[0], 0);
 	ASSERT_EQ((tir.getCoord_tir())[1], 0);
 }
-
-//test de la classe grille et ses méthodes
-/*class GrilleTest:public::testing::Test
-{
-protected:
-	virtual void SetUp()
-	{
-		grille_Utilsateur.MAJFlotteUtil(flotte_util);
-		grille_Ordi.MAJAttaqueOrdi(flotte_ordi);
-
-	}
-
-	virtual void TearDown()
-	{//
-	}
-
-	grille_Utilsateur = grille(flotte_util);
-	grille_Ordi = grille(flotte_ordi);
-};
-*/
-
 
 
 int main(int argc, char **argv)

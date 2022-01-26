@@ -21,7 +21,7 @@ void TirUtil::coorddecase()
 {
 	char lettre;
 	int entier;
-	/*glRasterPos2f(0, 0);
+	glRasterPos2f(0, 0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glOrtho(0.0f, windowWidth, windowHeight, 0.0f, 0.0f, 1.0f);/*faudra penser à utiliser des variables globales*/
@@ -64,7 +64,7 @@ TirUtil::TirUtil() {
 }
 
 
-//fonction de tir de l'ordinateur
+//fonction de tir de l'ordinateur, générer deux coordonnés aléatoire pour le tir de l'ordinateur
 coordonnees tirOrdi()
 {
 	srand((unsigned int) time(NULL));

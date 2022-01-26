@@ -32,7 +32,7 @@ vector
 flotte.h
 ../include/flotte.h
 
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.cpp
+/home/eleve/Documents/MEDEV/TP_BatailleNavale/TP_BatailleNavale/src/tir_util.cpp
 iostream
 -
 GL/gl.h
@@ -44,5 +44,5 @@ GL/glut.h
 string
 -
 tir_util.h
-/home/firas/Bureau/Ei2_OPRV/MEDEV/TP_BatailleNavale/src/tir_util.h
+/home/eleve/Documents/MEDEV/TP_BatailleNavale/TP_BatailleNavale/src/tir_util.h
 
